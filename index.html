@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Nicy Tsai Media Kit</title>
-    <!-- 載入必要環境，確保連結正確無誤 -->
+    <!-- 載入必要環境 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
@@ -23,7 +23,7 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-        // 定義內嵌 SVG 圖示，確保完全相容，解決 React Error #130
+        // 定義內嵌 SVG 圖示組件，確保相容性與視覺美感
         const IconVideo = () => (
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
         );
@@ -51,7 +51,7 @@
                 </a>
               </nav>
 
-              {/* 主標題區塊 */}
+              {/* Hero Section */}
               <header className="pt-40 pb-32 px-8 max-w-4xl mx-auto">
                 <h1 className="text-[2.5rem] md:text-[3.5rem] leading-tight font-light mb-8 tracking-tight">
                   蔡妮熹醫師 <br />
@@ -63,7 +63,7 @@
                 <div className="mt-12 h-[1px] w-24 bg-stone-300"></div>
               </header>
 
-              {/* 核心理念 */}
+              {/* About Section */}
               <section className="py-24 px-8 max-w-4xl mx-auto bg-white/40">
                 <div className="grid md:grid-cols-3 gap-12 items-start">
                   <div className="md:col-span-1">
@@ -79,11 +79,12 @@
 
               {/* 受眾數據 */}
               <section className="py-32 px-8 max-w-4xl mx-auto">
-                <h2 className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-16 text-center">Audience Performance</h2>
+                <h2 className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-16 text-center">Audience Performance (Last 30 Days)</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
                   <div className="flex flex-col items-center text-center">
                     <span className="text-xs text-stone-400 mb-2 uppercase tracking-widest">Impressions</span>
                     <span className="text-4xl font-light tracking-tighter">19,366</span>
+                    <span className="mt-2 text-[10px] text-stone-400">總觀看次數</span>
                   </div>
                   <div className="flex flex-col items-center text-center">
                     <span className="text-xs text-stone-400 mb-2 uppercase tracking-widest">Reach</span>
@@ -91,10 +92,12 @@
                       <span className="text-4xl font-light tracking-tighter">1,847</span>
                       <span className="text-xs text-green-600 font-medium">+64.6%</span>
                     </div>
+                    <span className="mt-2 text-[10px] text-stone-400">觸及帳號數</span>
                   </div>
                   <div className="flex flex-col items-center text-center">
                     <span className="text-xs text-stone-400 mb-2 uppercase tracking-widest">Discovery</span>
                     <span className="text-4xl font-light tracking-tighter">36.4%</span>
+                    <span className="mt-2 text-[10px] text-stone-400">非粉絲觸及率</span>
                   </div>
                 </div>
               </section>
@@ -118,6 +121,7 @@
                         <div>
                           <p className="text-xs text-stone-400 uppercase mb-1">Core Age</p>
                           <p className="text-xl font-light tracking-tight">25-34歲 (61.1%)</p>
+                          <p className="text-[10px] text-stone-400">35-44歲 (27.3%)</p>
                         </div>
                         <div>
                           <p className="text-xs text-stone-400 uppercase mb-1">Location</p>
@@ -131,7 +135,7 @@
                     <ul className="space-y-4">
                       {['醫學美容與肌膚知識', '女性狀態與自我照顧', '自然感與節制美學', '高質感生活日常'].map((item) => (
                         <li key={item} className="flex items-center gap-4 text-sm font-light text-stone-600">
-                          <div className="w-1 h-1 bg-stone-400 rounded-full"></div>
+                          <div className="w-1.5 h-1.5 bg-stone-300 rounded-full"></div>
                           {item}
                         </li>
                       ))}
@@ -140,12 +144,13 @@
                 </div>
               </section>
 
-              {/* 報價區塊 */}
+              {/* Collaboration Section */}
               <section className="py-32 px-8 max-w-4xl mx-auto">
                 <div className="text-center mb-20">
                   <h2 className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-4">Service & Pricing</h2>
                   <p className="font-serif italic text-2xl">合作形式與參考報價</p>
                 </div>
+
                 <div className="grid md:grid-cols-2 gap-12">
                   <div className="space-y-6">
                     <h4 className="text-[10px] tracking-widest uppercase text-stone-400 border-b border-stone-100 pb-2">Service Types</h4>
@@ -172,29 +177,31 @@
                       </div>
                     </div>
                   </div>
+
                   <div className="bg-stone-50 p-10 border border-stone-100">
                     <h4 className="text-[10px] tracking-widest uppercase text-stone-400 mb-8">Standard Rate</h4>
                     <div className="space-y-6">
                       <div className="flex justify-between items-baseline border-b border-stone-200 pb-4">
                         <span className="text-sm font-light">圖文貼文</span>
-                        <span className="text-lg font-light tracking-tight">NT$ 15,000 起</span>
+                        <span className="text-lg font-light tracking-tight">NT$ 15,000 <span className="text-xs text-stone-400">起</span></span>
                       </div>
                       <div className="flex justify-between items-baseline border-b border-stone-200 pb-4">
                         <span className="text-sm font-light">Reels 短影音</span>
-                        <span className="text-lg font-light tracking-tight">NT$ 24,000 起</span>
+                        <span className="text-lg font-light tracking-tight">NT$ 24,000 <span className="text-xs text-stone-400">起</span></span>
                       </div>
                       <div className="flex justify-between items-baseline border-b border-stone-200 pb-4">
                         <span className="text-sm font-light">廣告投放/白名單 (2w)</span>
-                        <span className="text-lg font-light tracking-tight">NT$ 6,000 起</span>
+                        <span className="text-lg font-light tracking-tight">NT$ 6,000 <span className="text-xs text-stone-400">起</span></span>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                {/* Special Campaign Offer */}
                 <div className="mt-16 bg-stone-900 text-stone-100 p-12 text-center">
                   <p className="text-xs tracking-widest uppercase mb-4 opacity-60">Current Campaign Offer</p>
                   <h3 className="text-2xl font-light mb-4">本次 Reels 專案報價</h3>
-                  <p className="text-3xl tracking-tighter mb-6 font-light">NT$ 30,000 起</p>
+                  <p className="text-3xl tracking-tighter mb-6 font-light">NT$ 30,000 <span className="text-sm opacity-60">起</span></p>
                   <p className="text-sm font-light opacity-60 max-w-md mx-auto leading-relaxed">
                     * 最終價格依內容形式與授權需求調整。<br />
                     若有預算考量，歡迎依合作細節進行深度討論。
@@ -202,7 +209,7 @@
                 </div>
               </section>
 
-              {/* 頁尾 */}
+              {/* Footer */}
               <footer className="py-24 px-8 max-w-4xl mx-auto text-center border-t border-stone-200">
                 <p className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-8">Contact & Social</p>
                 <div className="flex flex-col items-center gap-4">
