@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6f0ec3; -webkit-text-stroke: #6f0ec3}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0e6e6d; -webkit-text-stroke: #0e6e6d}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #18702b; -webkit-text-stroke: #18702b}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4d5055; -webkit-text-stroke: #4d5055}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #bf1c25; -webkit-text-stroke: #bf1c25}
+    span.s1 {font-kerning: none; background-color: #ecf1f7}
+    span.s2 {font-kerning: none; color: #000000; background-color: #ecf1f7; -webkit-text-stroke: 0px #000000}
+    span.s3 {font-kerning: none; color: #0e6e6d; background-color: #ecf1f7; -webkit-text-stroke: 0px #0e6e6d}
+    span.s4 {font-kerning: none; color: #18702b; background-color: #ecf1f7; -webkit-text-stroke: 0px #18702b}
+    span.s5 {font-kerning: none; color: #6f0ec3; background-color: #ecf1f7; -webkit-text-stroke: 0px #6f0ec3}
+    span.s6 {font-kerning: none}
+    span.s7 {font-kerning: none; color: #bf1c25; background-color: #ecf1f7; -webkit-text-stroke: 0px #bf1c25}
+    span.s8 {font-kerning: none; color: #a4450b; background-color: #ecf1f7; -webkit-text-stroke: 0px #a4450b}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">import</span><span class="s2"> </span><span class="s3">React</span><span class="s2"> </span><span class="s1">from</span><span class="s2"> </span><span class="s4">'react'</span><span class="s2">;</span></p>
+<p class="p2"><span class="s5">import</span><span class="s2"> { </span><span class="s1">Instagram</span><span class="s2">, </span><span class="s1">TrendingUp</span><span class="s2">, </span><span class="s1">Users</span><span class="s2">, </span><span class="s1">Target</span><span class="s2">, </span><span class="s1">Layout</span><span class="s2">, </span><span class="s1">Video</span><span class="s2">, </span><span class="s1">Image</span><span class="s2">, </span><span class="s1">Star</span><span class="s2">, </span><span class="s1">Mail</span><span class="s2"> } </span><span class="s5">from</span><span class="s2"> </span><span class="s4">'lucide-react'</span><span class="s2">;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p4"><span class="s5">const</span><span class="s1"> </span><span class="s3">App</span><span class="s1"> = () =&gt; {</span></p>
+<p class="p1"><span class="s2"><span class="Apple-converted-space">  </span></span><span class="s1">return</span><span class="s2"> (</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div className=</span><span class="s1">"min-h-screen bg-[#FAF9F6] text-[#1A1A1A] font-sans selection:bg-stone-200"</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* Navigation - Minimal */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;nav className=</span><span class="s1">"fixed top-0 w-full px-8 py-6 flex justify-between items-center bg-[#FAF9F6]/80 backdrop-blur-sm z-50"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;span className=</span><span class="s1">"text-xs tracking-[0.3em] font-light uppercase"</span><span class="s2">&gt;</span><span class="s3">Dr</span><span class="s2">. </span><span class="s3">Nicy</span><span class="s2"> </span><span class="s3">Tsai</span><span class="s2">&lt;/span&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;a href=</span><span class="s1">"https://instagram.com/dr.nicytsai"</span><span class="s2"> target=</span><span class="s1">"_blank"</span><span class="s2"> rel=</span><span class="s1">"noreferrer"</span><span class="s2"> className=</span><span class="s1">"text-xs tracking-[0.1em] hover:opacity-50 transition-opacity"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span></span><span class="s7">@</span><span class="s1">dr.nicytsai</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* Hero Section */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;header className=</span><span class="s1">"pt-40 pb-32 px-8 max-w-4xl mx-auto"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;h1 className=</span><span class="s1">"text-[2.5rem] md:text-[3.5rem] leading-tight font-light mb-8 tracking-tight"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span></span><span class="s7">蔡妮熹醫師</span><span class="s1"> &lt;br /&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;span className=</span><span class="s1">"text-stone-400 italic font-serif text-[2rem] md:text-[3rem]"</span><span class="s2">&gt;</span><span class="s3">Professional</span><span class="s2"> </span><span class="s3">Aesthetic</span><span class="s2"> </span><span class="s3">Content</span><span class="s2"> </span><span class="s3">Creator</span><span class="s2">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h1&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;p className=</span><span class="s1">"text-lg md:text-xl font-light leading-relaxed max-w-2xl text-stone-700"</span><span class="s2">&gt;</span></p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">          </span></span><span class="s1">醫學美容醫師</span><span class="s2"> </span><span class="s1">｜</span><span class="s2"> </span><span class="s1">美感生活內容創作者</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"mt-12 h-[1px] w-24 bg-stone-300"</span><span class="s2">&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* About Section */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;section className=</span><span class="s1">"py-24 px-8 max-w-4xl mx-auto bg-white/40"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"grid md:grid-cols-3 gap-12 items-start"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s4">"md:col-span-1"</span><span class="s1">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;h2 className=</span><span class="s1">"text-xs tracking-[0.3em] uppercase text-stone-400 mb-4"</span><span class="s2">&gt;</span><span class="s3">Core</span><span class="s2"> </span><span class="s3">Vision</span><span class="s2">&lt;/h2&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;p className=</span><span class="s1">"font-serif italic text-xl text-stone-800"</span><span class="s2">&gt;</span><span class="s7">「美感，不只是改變外在，而是更理解自己。」</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s1">"md:col-span-2 space-y-6 text-stone-600 leading-relaxed font-light"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">              </span></span><span class="s1">以醫學美容專業為基礎，分享關於肌膚狀態、自然美感、女性自我照顧與生活質感內容。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">              </span></span><span class="s1">內容風格結合醫師專業可信度與簡潔穩定的視覺語言，與重視自我管理、審美與生活品質的女性受眾建立長期連結。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* Stats Section */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;section className=</span><span class="s1">"py-32 px-8 max-w-4xl mx-auto"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;h2 className=</span><span class="s1">"text-xs tracking-[0.3em] uppercase text-stone-400 mb-16 text-center"</span><span class="s2">&gt;</span><span class="s3">Audience</span><span class="s2"> </span><span class="s3">Performance</span><span class="s2"> (</span><span class="s3">Last</span><span class="s2"> </span><span class="s8">30</span><span class="s2"> </span><span class="s3">Days</span><span class="s2">)&lt;/h2&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s1">"flex flex-col items-center text-center"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s1">"text-xs text-stone-400 mb-2 uppercase tracking-widest"</span><span class="s2">&gt;</span><span class="s3">Impressions</span><span class="s2">&lt;/span&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s1">"text-4xl font-light tracking-tighter"</span><span class="s2">&gt;</span><span class="s8">19</span><span class="s2">,</span><span class="s8">366</span><span class="s2">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s4">"mt-2 text-[10px] text-stone-400"</span><span class="s1">&gt;</span><span class="s7">總觀看次數</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s1">"flex flex-col items-center text-center"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s1">"text-xs text-stone-400 mb-2 uppercase tracking-widest"</span><span class="s2">&gt;</span><span class="s3">Reach</span><span class="s2">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className=</span><span class="s4">"flex items-baseline gap-2"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span className=</span><span class="s4">"text-4xl font-light tracking-tighter"</span><span class="s1">&gt;</span><span class="s8">1</span><span class="s1">,</span><span class="s8">847</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span className=</span><span class="s4">"text-xs text-green-600"</span><span class="s1">&gt;+</span><span class="s8">64.6</span><span class="s1">%&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s4">"mt-2 text-[10px] text-stone-400"</span><span class="s1">&gt;</span><span class="s7">觸及帳號數</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s1">"flex flex-col items-center text-center"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s1">"text-xs text-stone-400 mb-2 uppercase tracking-widest"</span><span class="s2">&gt;</span><span class="s3">Discovery</span><span class="s2">&lt;/span&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s1">"text-4xl font-light tracking-tighter"</span><span class="s2">&gt;</span><span class="s8">36.4</span><span class="s2">%&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span className=</span><span class="s4">"mt-2 text-[10px] text-stone-400"</span><span class="s1">&gt;</span><span class="s7">非粉絲觸及率</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* Demographics Section */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;section className=</span><span class="s1">"py-24 px-8 max-w-4xl mx-auto border-y border-stone-200/60"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"grid md:grid-cols-2 gap-20"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;h3 className=</span><span class="s1">"text-xs tracking-[0.2em] uppercase text-stone-400 mb-8"</span><span class="s2">&gt;</span><span class="s3">Audience</span><span class="s2"> </span><span class="s3">Profile</span><span class="s2">&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className=</span><span class="s4">"space-y-8"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className=</span><span class="s4">"flex justify-between mb-2"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className=</span><span class="s4">"text-sm font-light"</span><span class="s1">&gt;</span><span class="s7">女性受眾</span><span class="s1"> </span><span class="s3">Female</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className=</span><span class="s4">"text-sm font-light"</span><span class="s1">&gt;</span><span class="s8">72.2</span><span class="s1">%&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className=</span><span class="s4">"h-[2px] w-full bg-stone-100"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className=</span><span class="s4">"h-full bg-stone-800"</span><span class="s1"> style={{ width: </span><span class="s4">'72.2%'</span><span class="s1"> }}&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className=</span><span class="s4">"grid grid-cols-2 gap-8"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">                  </span>&lt;p className=</span><span class="s1">"text-xs text-stone-400 uppercase mb-1"</span><span class="s2">&gt;</span><span class="s3">Core</span><span class="s2"> </span><span class="s3">Age</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className=</span><span class="s4">"text-xl font-light tracking-tight"</span><span class="s1">&gt;</span><span class="s8">25</span><span class="s1">-</span><span class="s8">34</span><span class="s7">歲</span><span class="s1"> (</span><span class="s8">61.1</span><span class="s1">%)&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className=</span><span class="s4">"text-xs text-stone-400 mt-1"</span><span class="s1">&gt;</span><span class="s8">35</span><span class="s1">-</span><span class="s8">44</span><span class="s7">歲</span><span class="s1"> (</span><span class="s8">27.3</span><span class="s1">%)&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">                  </span>&lt;p className=</span><span class="s1">"text-xs text-stone-400 uppercase mb-1"</span><span class="s2">&gt;</span><span class="s3">Location</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className=</span><span class="s4">"text-xl font-light tracking-tight"</span><span class="s1">&gt;</span><span class="s7">台灣</span><span class="s1"> (</span><span class="s8">90.9</span><span class="s1">%)&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;h3 className=</span><span class="s1">"text-xs tracking-[0.2em] uppercase text-stone-400 mb-8"</span><span class="s2">&gt;</span><span class="s3">Content</span><span class="s2"> </span><span class="s3">Pillars</span><span class="s2">&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul className=</span><span class="s4">"space-y-4"</span><span class="s1">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">              </span>{[</span><span class="s1">'醫學美容與肌膚知識'</span><span class="s2">, </span><span class="s1">'女性狀態與自我照顧'</span><span class="s2">, </span><span class="s1">'自然感與節制美學'</span><span class="s2">, </span><span class="s1">'高質感生活日常'</span><span class="s2">].map((item) =&gt; (</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">                </span>&lt;li key={item} className=</span><span class="s1">"flex items-center gap-4 text-sm font-light text-stone-600"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className=</span><span class="s4">"w-1 h-1 bg-stone-400 rounded-full"</span><span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{item}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* Collaboration Section */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;section className=</span><span class="s1">"py-32 px-8 max-w-4xl mx-auto"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s4">"text-center mb-20"</span><span class="s1">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;h2 className=</span><span class="s1">"text-xs tracking-[0.3em] uppercase text-stone-400 mb-4"</span><span class="s2">&gt;</span><span class="s3">Service</span><span class="s2"> &amp; </span><span class="s3">Pricing</span><span class="s2">&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p className=</span><span class="s4">"font-serif italic text-2xl"</span><span class="s1">&gt;</span><span class="s7">合作形式與參考報價</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"grid md:grid-cols-2 gap-12"</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">          </span>{</span><span class="s1">/* List of Services */</span><span class="s2">}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s4">"space-y-6"</span><span class="s1">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;h4 className=</span><span class="s1">"text-[10px] tracking-widest uppercase text-stone-400 border-b border-stone-100 pb-2"</span><span class="s2">&gt;</span><span class="s3">Service</span><span class="s2"> </span><span class="s3">Types</span><span class="s2">&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className=</span><span class="s4">"grid grid-cols-1 gap-4"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{[</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{ icon: &lt;</span><span class="s3">Video</span><span class="s1"> size={</span><span class="s8">16</span><span class="s1">} /&gt;, label: </span><span class="s4">'Instagram Reels 短影音'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{ icon: &lt;</span><span class="s3">Layout</span><span class="s1"> size={</span><span class="s8">16</span><span class="s1">} /&gt;, label: </span><span class="s4">'Feed 圖文貼文'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{ icon: &lt;</span><span class="s3">Star</span><span class="s1"> size={</span><span class="s8">16</span><span class="s1">} /&gt;, label: </span><span class="s4">'限時動態分享'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{ icon: &lt;</span><span class="s3">Image</span><span class="s1"> size={</span><span class="s8">16</span><span class="s1">} /&gt;, label: </span><span class="s4">'品牌形象內容合作'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{ icon: &lt;</span><span class="s3">Users</span><span class="s1"> size={</span><span class="s8">16</span><span class="s1">} /&gt;, label: </span><span class="s4">'品牌採訪/節目通告'</span><span class="s1"> }</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>].map((service) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div key={service.label} className=</span><span class="s4">"flex items-center gap-4 py-2 opacity-80"</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className=</span><span class="s4">"text-stone-400"</span><span class="s1">&gt;{service.icon}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className=</span><span class="s4">"text-sm font-light tracking-wide"</span><span class="s1">&gt;{service.label}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">          </span>{</span><span class="s1">/* Pricing Card */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;div className=</span><span class="s1">"bg-stone-50 p-10 border border-stone-100"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>&lt;h4 className=</span><span class="s1">"text-[10px] tracking-widest uppercase text-stone-400 mb-8"</span><span class="s2">&gt;</span><span class="s3">Standard</span><span class="s2"> </span><span class="s3">Rate</span><span class="s2">&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className=</span><span class="s4">"space-y-6"</span><span class="s1">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">              </span>&lt;div className=</span><span class="s1">"flex justify-between items-baseline border-b border-stone-200 pb-4"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className=</span><span class="s4">"text-sm font-light"</span><span class="s1">&gt;</span><span class="s7">圖文貼文</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className=</span><span class="s4">"text-lg font-light tracking-tight"</span><span class="s1">&gt;</span><span class="s3">NT$</span><span class="s1"> </span><span class="s8">15</span><span class="s1">,</span><span class="s8">000</span><span class="s1"> &lt;span className=</span><span class="s4">"text-xs text-stone-400"</span><span class="s1">&gt;</span><span class="s7">起</span><span class="s1">&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">              </span>&lt;div className=</span><span class="s1">"flex justify-between items-baseline border-b border-stone-200 pb-4"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className=</span><span class="s4">"text-sm font-light"</span><span class="s1">&gt;</span><span class="s3">Reels</span><span class="s1"> </span><span class="s7">短影音</span><span class="s1">&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className=</span><span class="s4">"text-lg font-light tracking-tight"</span><span class="s1">&gt;</span><span class="s3">NT$</span><span class="s1"> </span><span class="s8">24</span><span class="s1">,</span><span class="s8">000</span><span class="s1"> &lt;span className=</span><span class="s4">"text-xs text-stone-400"</span><span class="s1">&gt;</span><span class="s7">起</span><span class="s1">&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">              </span>&lt;div className=</span><span class="s1">"flex justify-between items-baseline border-b border-stone-200 pb-4"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className=</span><span class="s4">"text-sm font-light"</span><span class="s1">&gt;</span><span class="s7">廣告投放</span><span class="s1">/</span><span class="s7">白名單</span><span class="s1"> (</span><span class="s8">2</span><span class="s1">w)&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className=</span><span class="s4">"text-lg font-light tracking-tight"</span><span class="s1">&gt;</span><span class="s3">NT$</span><span class="s1"> </span><span class="s8">6</span><span class="s1">,</span><span class="s8">000</span><span class="s1"> &lt;span className=</span><span class="s4">"text-xs text-stone-400"</span><span class="s1">&gt;</span><span class="s7">起</span><span class="s1">&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">        </span>{</span><span class="s1">/* Special Quote */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"mt-16 bg-stone-900 text-stone-100 p-12 text-center"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;p className=</span><span class="s1">"text-xs tracking-widest uppercase mb-4 opacity-60"</span><span class="s2">&gt;</span><span class="s3">Current</span><span class="s2"> </span><span class="s3">Campaign</span><span class="s2"> </span><span class="s3">Offer</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 className=</span><span class="s4">"text-2xl font-light mb-4"</span><span class="s1">&gt;</span><span class="s7">本次</span><span class="s1"> </span><span class="s3">Reels</span><span class="s1"> </span><span class="s7">專案報價</span><span class="s1">&lt;/h3&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;p className=</span><span class="s1">"text-3xl tracking-tighter mb-6 font-light"</span><span class="s2">&gt;</span><span class="s3">NT$</span><span class="s2"> </span><span class="s8">30</span><span class="s2">,</span><span class="s8">000</span><span class="s2"> &lt;span className=</span><span class="s1">"text-sm opacity-60"</span><span class="s2">&gt;</span><span class="s7">起</span><span class="s2">&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;p className=</span><span class="s1">"text-sm font-light opacity-60 max-w-md mx-auto leading-relaxed"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>* </span><span class="s7">最終價格依內容形式與授權需求調整。</span><span class="s1">&lt;br /&gt;</span></p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">若有預算考量，歡迎依合作細節進行深度討論。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>{</span><span class="s1">/* Footer */</span><span class="s2">}</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">      </span>&lt;footer className=</span><span class="s1">"py-24 px-8 max-w-4xl mx-auto text-center border-t border-stone-200"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;p className=</span><span class="s1">"text-xs tracking-[0.3em] uppercase text-stone-400 mb-8"</span><span class="s2">&gt;</span><span class="s3">Contact</span><span class="s2"> &amp; </span><span class="s3">Social</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div className=</span><span class="s1">"flex flex-col items-center gap-4"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;a href=</span><span class="s1">"https://instagram.com/dr.nicytsai"</span><span class="s2"> className=</span><span class="s1">"text-2xl font-light hover:opacity-50 transition-opacity tracking-tight"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">@</span><span class="s1">dr.nicytsai</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</span></p>
+<p class="p5"><span class="s2"><span class="Apple-converted-space">          </span>&lt;p className=</span><span class="s1">"text-sm font-light text-stone-400"</span><span class="s2">&gt;</span><span class="s7">邀請與蔡妮熹醫師一同創造具美感深度的內容</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/footer&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span>);</span></p>
+<p class="p4"><span class="s1">};</span></p>
+<p class="p3"><span class="s6"></span><br></p>
+<p class="p1"><span class="s1">export</span><span class="s2"> </span><span class="s1">default</span><span class="s2"> </span><span class="s3">App</span><span class="s2">;</span></p>
+</body>
+</html>
