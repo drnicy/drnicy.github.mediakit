@@ -51,9 +51,9 @@
                 </a>
               </nav>
 
-              {/* Hero Section - 形象照 (已移除灰階) */}
+              {/* Hero Section - 形象照 */}
               <header className="pt-40 pb-32 px-8 max-w-4xl mx-auto">
-                <div className="mb-12 overflow-hidden rounded-full w-32 h-32 md:w-48 md:h-48 bg-stone-100 border border-stone-200 shadow-sm flex items-center justify-center">
+                <div className="mb-12 overflow-hidden rounded-full w-40 h-40 md:w-64 md:h-64 bg-stone-100 border border-stone-200 shadow-sm flex items-center justify-center">
                   <img 
                     src="profile.jpg" 
                     alt="蔡妮熹醫師形象照" 
@@ -74,6 +74,9 @@
                 </h1>
                 <p className="text-lg md:text-xl font-light leading-relaxed max-w-2xl text-stone-700">
                   醫學美容醫師 ｜ 美感生活內容創作者
+                </p>
+                <p className="mt-4 text-sm md:text-base font-light text-stone-400 tracking-wide italic">
+                  Aesthetic medicine, feminine intelligence, and cultivated beauty.
                 </p>
                 <div className="mt-12 h-[1px] w-24 bg-stone-300"></div>
               </header>
@@ -117,27 +120,37 @@
                 </div>
               </section>
 
-              {/* 廠商合作案例 - 彩色版本 */}
+              {/* 廠商合作案例 */}
               <section className="py-32 px-8 max-w-4xl mx-auto border-t border-stone-200/60">
                 <div className="text-center mb-20">
                   <h2 className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-4">Past Collaborations</h2>
                   <p className="font-serif italic text-2xl text-stone-800">精選合作案例</p>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8">
-                  {['collab1.jpg', 'collab2.jpg', 'collab3.jpg', 'collab4.jpg'].map((img, idx) => (
-                    <div key={idx} className="group overflow-hidden bg-stone-100 aspect-[4/5] border border-stone-200 flex items-center justify-center">
-                      <img 
-                        src={img} 
-                        alt={`合作案例 ${idx + 1}`} 
-                        className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                        onError={(e) => {
-                          e.target.style.display='none';
-                          e.target.nextSibling.style.display='flex';
-                        }}
-                      />
-                      <div className="hidden w-full h-full items-center justify-center text-stone-400 text-[10px] text-center p-4">
-                        [未找到 {img}]
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-x-4 gap-y-12 md:gap-x-8 md:gap-y-16">
+                  {[
+                    { img: 'collab1.jpg', label: '品牌採訪｜珠寶品牌 Maisonfawo' },
+                    { img: 'collab2.jpg', label: "品牌合作｜保養品牌 T'La Vie言生活" },
+                    { img: 'collab3.jpg', label: '品牌合作｜保養品牌 京城之霜' },
+                    { img: 'collab4.jpg', label: '品牌合作｜保養品牌 Juvaly姿芙莉' }
+                  ].map((item, idx) => (
+                    <div key={idx} className="group">
+                      <div className="overflow-hidden bg-stone-100 aspect-[4/5] border border-stone-200 flex items-center justify-center mb-4">
+                        <img 
+                          src={item.img} 
+                          alt={item.label} 
+                          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                          onError={(e) => {
+                            e.target.style.display='none';
+                            e.target.nextSibling.style.display='flex';
+                          }}
+                        />
+                        <div className="hidden w-full h-full items-center justify-center text-stone-400 text-[10px] text-center p-4">
+                          [未找到 {item.img}]
+                        </div>
                       </div>
+                      <p className="text-[10px] md:text-xs tracking-widest text-stone-400 text-center uppercase font-light leading-relaxed">
+                        {item.label}
+                      </p>
                     </div>
                   ))}
                 </div>
