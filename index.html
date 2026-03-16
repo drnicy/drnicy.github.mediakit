@@ -51,9 +51,9 @@
                 </a>
               </nav>
 
-              {/* Hero Section - 形象照 */}
+              {/* Hero Section - 形象照 (已移除灰階) */}
               <header className="pt-40 pb-32 px-8 max-w-4xl mx-auto">
-                <div className="mb-12 overflow-hidden rounded-full w-32 h-32 md:w-48 md:h-48 bg-stone-100 border border-stone-200 shadow-sm transition-all duration-700 hover:shadow-md">
+                <div className="mb-12 overflow-hidden rounded-full w-32 h-32 md:w-48 md:h-48 bg-stone-100 border border-stone-200 shadow-sm flex items-center justify-center">
                   <img 
                     src="profile.jpg" 
                     alt="蔡妮熹醫師形象照" 
@@ -64,7 +64,7 @@
                     }}
                   />
                   <div className="hidden w-full h-full items-center justify-center text-stone-400 text-[10px] text-center p-4">
-                    [請上傳 profile.jpg]
+                    [載入中]
                   </div>
                 </div>
 
@@ -117,7 +117,7 @@
                 </div>
               </section>
 
-              {/* 廠商合作案例 - 4張網格 */}
+              {/* 廠商合作案例 - 彩色版本 */}
               <section className="py-32 px-8 max-w-4xl mx-auto border-t border-stone-200/60">
                 <div className="text-center mb-20">
                   <h2 className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-4">Past Collaborations</h2>
@@ -125,18 +125,18 @@
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8">
                   {['collab1.jpg', 'collab2.jpg', 'collab3.jpg', 'collab4.jpg'].map((img, idx) => (
-                    <div key={idx} className="group overflow-hidden bg-stone-100 aspect-[4/5] border border-stone-200">
+                    <div key={idx} className="group overflow-hidden bg-stone-100 aspect-[4/5] border border-stone-200 flex items-center justify-center">
                       <img 
                         src={img} 
                         alt={`合作案例 ${idx + 1}`} 
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                         onError={(e) => {
                           e.target.style.display='none';
                           e.target.nextSibling.style.display='flex';
                         }}
                       />
                       <div className="hidden w-full h-full items-center justify-center text-stone-400 text-[10px] text-center p-4">
-                        [請上傳 {img}]
+                        [未找到 {img}]
                       </div>
                     </div>
                   ))}
@@ -185,7 +185,7 @@
                 </div>
               </section>
 
-              {/* 合作與報價 */}
+              {/* 報價與服務 */}
               <section className="py-32 px-8 max-w-4xl mx-auto">
                 <div className="text-center mb-20">
                   <h2 className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-4">Service & Pricing</h2>
